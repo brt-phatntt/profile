@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile - Phatntt</title>
+    <title>Nguyen Tran Tan Phat - Mid Full Stack Developer</title>
     <style>
         * {
             margin: 0;
@@ -15,19 +15,17 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             padding: 20px;
+            line-height: 1.6;
         }
 
-        .profile-container {
+        .cv-container {
             background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
             overflow: hidden;
-            max-width: 800px;
-            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
             animation: slideUp 0.6s ease-out;
         }
 
@@ -42,15 +40,15 @@
             }
         }
 
-        .profile-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        .cv-header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
             padding: 40px;
-            text-align: center;
             color: white;
+            text-align: center;
             position: relative;
         }
 
-        .profile-header::before {
+        .cv-header::before {
             content: '';
             position: absolute;
             top: 0;
@@ -67,307 +65,445 @@
             border-radius: 50%;
             border: 4px solid white;
             margin: 0 auto 20px;
-            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            background: linear-gradient(45deg, #e74c3c, #f39c12);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 48px;
+            font-size: 36px;
             font-weight: bold;
             color: white;
             position: relative;
             z-index: 1;
         }
 
-        .profile-name {
-            font-size: 28px;
-            font-weight: 600;
+        .name {
+            font-size: 32px;
+            font-weight: 700;
             margin-bottom: 8px;
             position: relative;
             z-index: 1;
         }
 
-        .profile-title {
-            font-size: 16px;
+        .title {
+            font-size: 18px;
             opacity: 0.9;
             margin-bottom: 20px;
             position: relative;
             z-index: 1;
         }
 
-        .profile-stats {
+        .contact-info {
             display: flex;
             justify-content: center;
             gap: 30px;
+            flex-wrap: wrap;
             position: relative;
             z-index: 1;
         }
 
-        .stat-item {
-            text-align: center;
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
         }
 
-        .stat-number {
-            font-size: 24px;
-            font-weight: bold;
-            display: block;
-        }
-
-        .stat-label {
-            font-size: 12px;
-            opacity: 0.8;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .profile-content {
+        .cv-content {
             padding: 40px;
         }
 
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
 
         .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+            position: relative;
+        }
+
+        .summary {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        .experience-item {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            border-left: 4px solid #3498db;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .experience-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .company-name {
             font-size: 20px;
             font-weight: 600;
-            color: #333;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            color: #2c3e50;
+            margin-bottom: 5px;
         }
 
-        .section-title::before {
-            content: '';
-            width: 4px;
-            height: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 2px;
-        }
-
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .info-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 15px;
-            background: #f8f9fa;
-            border-radius: 10px;
-            transition: transform 0.2s ease;
-        }
-
-        .info-item:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .info-icon {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 18px;
-        }
-
-        .info-details {
-            flex: 1;
-        }
-
-        .info-label {
-            font-size: 12px;
-            color: #666;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 4px;
-        }
-
-        .info-value {
-            font-size: 14px;
-            color: #333;
+        .job-title {
+            font-size: 16px;
+            color: #3498db;
             font-weight: 500;
         }
 
-        .skills {
+        .job-period {
+            font-size: 14px;
+            color: #7f8c8d;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .job-description {
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .project-section {
+            margin-top: 15px;
+        }
+
+        .project-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .project-tech {
+            font-size: 14px;
+            color: #e74c3c;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .tech-stack {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 8px;
+            margin-top: 15px;
         }
 
-        .skill-tag {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        .tech-tag {
+            background: linear-gradient(135deg, #3498db, #2980b9);
             color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 14px;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 12px;
             font-weight: 500;
-            transition: transform 0.2s ease;
         }
 
-        .skill-tag:hover {
-            transform: scale(1.05);
+        .education-item {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            border-left: 4px solid #e74c3c;
         }
 
-        .bio {
-            line-height: 1.6;
-            color: #555;
+        .degree {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .school {
             font-size: 16px;
+            color: #3498db;
+            margin-bottom: 5px;
         }
 
-        .social-links {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            margin-top: 20px;
+        .education-period {
+            font-size: 14px;
+            color: #7f8c8d;
         }
 
-        .social-link {
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 50%;
+        .gpa {
+            font-size: 14px;
+            color: #e74c3c;
+            font-weight: 500;
+            margin-top: 5px;
+        }
+
+        .certification-item {
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
-            color: white;
-            text-decoration: none;
-            font-size: 20px;
-            transition: transform 0.2s ease;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 10px;
         }
 
-        .social-link:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        .cert-name {
+            font-size: 16px;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        .cert-year {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .cv-container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .cv-header {
+                background: #2c3e50 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
         }
 
         @media (max-width: 768px) {
-            .profile-container {
+            .cv-container {
                 margin: 10px;
             }
 
-            .profile-header {
+            .cv-header {
                 padding: 30px 20px;
             }
 
-            .profile-content {
+            .cv-content {
                 padding: 30px 20px;
             }
 
-            .profile-stats {
-                gap: 20px;
+            .contact-info {
+                gap: 15px;
+                flex-direction: column;
             }
 
-            .info-grid {
-                grid-template-columns: 1fr;
+            .job-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .name {
+                font-size: 28px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="profile-container">
-        <div class="profile-header">
-            <div class="profile-avatar">PT</div>
-            <h1 class="profile-name">Phatntt</h1>
-            <p class="profile-title">Full Stack Developer</p>
-            <div class="profile-stats">
-                <div class="stat-item">
-                    <span class="stat-number">15</span>
-                    <span class="stat-label">Projects</span>
+<body>
+    <div class="cv-container">
+        <div class="cv-header">
+            <div class="profile-avatar">NP</div>
+            <h1 class="name">Nguyen Tran Tan Phat</h1>
+            <p class="title">Mid Full Stack Developer</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📱</span>
+                    <span>0988 300 140</span>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">3.2k</span>
-                    <span class="stat-label">Followers</span>
+                <div class="contact-item">
+                    <span>📧</span>
+                    <a href="mailto:phatntt.dev@gmail.com" style="color: white; text-decoration: none;">phatntt.dev@gmail.com</a>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">1.8k</span>
-                    <span class="stat-label">Following</span>
+                <div class="contact-item">
+                    <span>💼</span>
+                    <a href="https://linkedin.com/in/phatntt/" target="_blank" style="color: white; text-decoration: none;">linkedin.com/in/phatntt/</a>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>Thu Duc, HCM</span>
                 </div>
             </div>
         </div>
 
-        <div class="profile-content">
+        <div class="cv-content">
             <div class="section">
-                <h2 class="section-title">About Me</h2>
-                <p class="bio">
-                    Passionate full-stack developer with expertise in modern web technologies. 
-                    I love creating beautiful, functional applications that solve real-world problems. 
-                    Always eager to learn new technologies and collaborate on exciting projects.
+                <h2 class="section-title">SUMMARY</h2>
+                <p class="summary">
+                    Highly motivated and skilled .NET Developer with over 4 years of experience in designing, developing, and maintaining robust and scalable
+                    applications across diverse domains, including Anti-Money Laundering (AML), Logistics, and Laboratory Information Systems (LIS). Proven
+                    ability to contribute to complex projects, utilizing technologies such as .NET Core/.NET 6+, ASP.NET, and various architectural patterns
+                    (Microservices, CQRS, DDD), including experience with message queues like RabbitMQ and Kafka. Eager to take on increasing
+                    responsibility and contribute to a team as a key contributor, with a strong foundation in both backend and frontend development (ReactJS).
                 </p>
             </div>
 
             <div class="section">
-                <h2 class="section-title">Contact Information</h2>
-                <div class="info-grid">
-                    <div class="info-item">
-                        <div class="info-icon">📧</div>
-                        <div class="info-details">
-                            <div class="info-label">Email</div>
-                            <div class="info-value">phatntt@example.com</div>
+                <h2 class="section-title">WORK EXPERIENCE</h2>
+                
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="company-name">Sendo.vn</div>
+                            <div class="job-title">Software Engineer</div>
                         </div>
+                        <div class="job-period">04/2024 - Present</div>
                     </div>
-                    <div class="info-item">
-                        <div class="info-icon">📱</div>
-                        <div class="info-details">
-                            <div class="info-label">Phone</div>
-                            <div class="info-value">+1 (555) 123-4567</div>
-                        </div>
+                    <div class="job-description">Transportation Management System, Warehouse Management System</div>
+                    
+                    <div class="project-section">
+                        <ul style="margin-left: 20px; color: #555;">
+                            <li>Enhanced and developed new features for the TMS based on operational requirements, contributing to the optimization of shipment tracking and overall logistics operations.</li>
+                            <li>Supported and developed features for the WMS, improving inventory management and handled new workflows for internal transfers of SKUs between warehouses.</li>
+                            <li>Implemented unit tests for all newly developed features in both TMS and WMS, ensuring high-quality, reliable, and bug-free code.</li>
+                            <li>Created an extension to help generate unit tests using GitHub Copilot, streamlining the unit testing process and improving productivity.</li>
+                            <li>Worked closely with senior developers to optimize system performance, including database optimizations and improving processing efficiency.</li>
+                            <li>Participated in code reviews and applied feedback from other developers to continuously improve coding standards and practices.</li>
+                        </ul>
                     </div>
-                    <div class="info-item">
-                        <div class="info-icon">📍</div>
-                        <div class="info-details">
-                            <div class="info-label">Location</div>
-                            <div class="info-value">San Francisco, CA</div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="company-name">Regtech Solutions JSC</div>
+                            <div class="job-title">Developer</div>
                         </div>
+                        <div class="job-period">04/2022 - 03/2024</div>
                     </div>
-                    <div class="info-item">
-                        <div class="info-icon">🌐</div>
-                        <div class="info-details">
-                            <div class="info-label">Website</div>
-                            <div class="info-value">www.phatntt.dev</div>
+                    
+                    <div class="project-section">
+                        <div class="project-title">Implementation of Anti-Money Laundering System for State Bank of Vietnam</div>
+                        <div class="project-tech">EventSourcing, CQRS, DDD, Microservice</div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">ReactJS</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Neo4jDB</span>
+                            <span class="tech-tag">Jasper Report</span>
                         </div>
+                        <div class="project-description">Write APIs, React Web App, creating custom icons with Illustrator, modify open-source library to display virtualization diagram with data received from APIs.</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="project-title">Anti-Money Laundering System</div>
+                        <div class="project-tech">EventSourcing, CQRS, DDD, Microservice</div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">ReactJS</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-description">Back-end and Front-end for features.</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="project-title">OneLIS Solution</div>
+                        <div class="project-description">Hospital and clinic management system integrated with receiving results from laboratory machines.</div>
+                        <div class="project-tech">Microservice, DDD, CQRS, RabbitMQ, Identity Server</div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">.NET 6</span>
+                            <span class="tech-tag">ReactJS</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">RabbitMQ</span>
+                            <span class="tech-tag">Identity Server</span>
+                        </div>
+                        <div class="project-description">Write APIs and front-end for features.</div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="company-name">Vas Group</div>
+                            <div class="job-title">Developer</div>
+                        </div>
+                        <div class="job-period">10/2020 - 04/2022</div>
+                    </div>
+                    
+                    <div class="project-section">
+                        <div class="project-title">eDelivery</div>
+                        <div class="project-description">Vehicle access management system integrated with weighing and evaluation software for purchased materials.</div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">.NET 5</span>
+                            <span class="tech-tag">ReactJS</span>
+                            <span class="tech-tag">SQL Server</span>
+                            <span class="tech-tag">Android</span>
+                        </div>
+                        <div class="project-description">Build a website using ReactJs, write APIs, build Android App. Working and Deploy the system for internal employees and the user of the supplier.</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="project-title">Web Support</div>
+                        <div class="project-tech">ASP.NET Razor Page</div>
+                        <div class="project-description">Maintaining and developing website support for internal users.</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="project-title">LED matrix control app</div>
+                        <div class="project-description">Develop an iOS app to control the LED panel by sending pre-embedded codes on LED screen via Bluetooth connection.</div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="company-name">Tourbooking OTA</div>
+                            <div class="job-title">Developer</div>
+                        </div>
+                        <div class="job-period">08/2019 - 09/2020</div>
+                    </div>
+                    
+                    <div class="project-section">
+                        <div class="project-title">T-Kitchen</div>
+                        <div class="project-description">Support working with CMS system development partners on WordPress, centralized user authentication system and Flutter cross-platform mobile app application. Customize Zoho CRM system to suit company's requirements APIs synchronizes users and orders, integration with Zoho CRM, SaleIQ.</div>
+                    </div>
+
+                    <div class="project-section">
+                        <div class="project-title">Custom new CRM system</div>
+                        <div class="project-description">Using open-source V-tiger platform Custom modules, customize APIs. Build a landing page using WordPress.</div>
                     </div>
                 </div>
             </div>
 
             <div class="section">
-                <h2 class="section-title">Skills</h2>
-                <div class="skills">
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">TypeScript</span>
-                    <span class="skill-tag">React</span>
-                    <span class="skill-tag">Node.js</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">MongoDB</span>
-                    <span class="skill-tag">PostgreSQL</span>
-                    <span class="skill-tag">Git</span>
-                    <span class="skill-tag">Docker</span>
-                    <span class="skill-tag">AWS</span>
+                <h2 class="section-title">EDUCATION</h2>
+                <div class="education-item">
+                    <div class="degree">Software Technology</div>
+                    <div class="school">HCMC University of Technology and Education</div>
+                    <div class="education-period">2015 - 2020</div>
+                    <div class="gpa">GPA: 2.92/4.0</div>
                 </div>
             </div>
 
             <div class="section">
-                <h2 class="section-title">Connect with Me</h2>
-                <div class="social-links">
-                    <a href="https://github.com/phatntt" class="social-link" title="GitHub">
-                        🐙
-                    </a>
-                    <a href="https://linkedin.com/in/phatntt" class="social-link" title="LinkedIn">
-                        💼
-                    </a>
-                    <a href="https://twitter.com/phatntt" class="social-link" title="Twitter">
-                        🐦
-                    </a>
-                    <a href="mailto:phatntt@example.com" class="social-link" title="Email">
-                        ✉️
-                    </a>
+                <h2 class="section-title">CERTIFICATIONS</h2>
+                <div class="certification-item">
+                    <div class="cert-name">TOEIC 600</div>
+                    <div class="cert-year">2020</div>
                 </div>
             </div>
         </div>
