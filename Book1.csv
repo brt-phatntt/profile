@@ -1,0 +1,207 @@
+﻿STT,Tên khoa/trường,Điểm chuẩn
+,,(thấp nhất - cao nhất)
+1,Đại học Ngoại thương,"27-28,15 (thang 30)"
+,,"34,8-36,25 (thang 40)"
+2,Đại học Bách khoa Hà Nội,"22,5-29,04"
+3,Đại học Bách khoa TP HCM,"20,5-28"
+4,Đại học Ngân hàng TP HCM,"22,3-25,54"
+5,Đại học Kinh tế TP HCM,"22-27,6"
+6,Đại học Công nghệ Thông tin TP HCM,"22-27,7"
+7,Đại học Giao thông Vận tải,"16,05-25"
+8,Đại học Công đoàn,"14,5-23,25"
+9,Đại học Tài nguyên và Môi trường,15-21
+10,Đại học Xây dựng,"16-24,25"
+11,Học viện Ngân hàng,"21,5-27"
+12,Đại học Y khoa Phạm Ngọc Thạnh,"19-27,55"
+13,Đại học Nha Trang,"15-23,5"
+14,Đại học Thăng Long,"16,75-24,2"
+15,Đại học Kinh tế quốc dân,"24,5-35,6 (có môn hệ số 2)"
+16,Đại học Thương mại,"24-26,7"
+17,Đại học Luật TP HCM,"26,25-27"
+18,Đại học Khoa học Tự nhiên (Đại học Quốc gia Hà Nội),"17-26,1"
+19,Đại học Khoa học Xã hội và Nhân văn (Đại học Quốc gia Hà Nội),18-30
+20,Đại học Ngoại ngữ (Đại học Quốc gia Hà Nội),"24,86-36,08"
+21,Đại học Kinh tế (Đại học Quốc gia Hà Nội),"30,57-34,5 (tiếng Anh hệ số 2)"
+22,Đại học Công nghệ (Đại học Quốc gia Hà Nội),"22,4-28,1"
+23,Đại học Giáo dục (Đại học Quốc gia Hà Nội),"17-25,3"
+24,Đại học Việt Nhật (Đại học Quốc gia Hà Nội),"19,4"
+25,Khoa Luật (Đại học Quốc gia Hà Nội),"23,25-27,5"
+26,Khoa Quản trị và Kinh doanh (Đại học Quốc gia Hà Nội),"17,2-18,35"
+27,Khoa Y dược (Đại học Quốc gia Hà Nội),"24,9-28,35"
+28,Khoa Quốc tế (Đại học Quốc gia Hà Nội),"17-23,25"
+29,Đại học Sư phạm TP HCM,"19-26,5"
+30,Đại học Y Hà Nội,"22,4-28,9"
+31,Học viện Y học cổ truyền,"24,15-26,1"
+32,Đại học Kỹ thuật Y tế Hải Dương,"19-26,1"
+33,Đại học Sư phạm Kỹ thuật TP HCM,16-27
+34,Học viện Tài chính,"24,7-32,7 (có môn hệ số 2)"
+35,Đại học Sài Gòn,"15,5-26,18"
+36,Đại học Lâm nghiệp,15-18
+37,Đại học Công nghệ Giao thông Vận tải,15-24
+38,Đại học Nông lâm TP HCM,"15-24,5"
+39,Học viện Báo chí và Tuyên truyền,"16-36,75 (có môn hệ số 2)"
+40,Đại học Công nghiệp TP HCM,"15-24,5"
+41,Đại học Giao thông Vận tải TP HCM,"15-25,4"
+42,Đại học Mở Hà Nội,"17,05-31,12 (có môn hệ số 2)"
+43,Đại học Điện lực,15-20
+44,Học viện Ngoại giao,"25,6-34,75 (có môn hệ số 2)"
+45,Đại học Mỏ - Địa chất,15-25
+46,Học viện Chính sách và Phát triển,"18,25-22,75"
+47,Đại học Bách khoa (Đại học Đà Nẵng),"15,5-27,5"
+48,Đại học Kinh tế (Đại học Đà Nẵng),"22-26,75"
+49,Đại học Sư phạm (Đại học Đà Nẵng),"15-21,5"
+50,Đại học Ngoại ngữ (Đại học Đà Nẵng),"15,03-26,4"
+51,Đại học Sư phạm Kỹ thuật (Đại học Đà Nẵng),"15,05-23,45"
+52,Phân hiệu Kon Tum (Đại học Đà Nẵng),"14,35-20,5"
+53,Viện nghiên cứu và đào tạo Việt - Anh (Đại học Đà Nẵng),"19,5-23,6"
+54,Khoa Y Dược (Đại học Đà Nẵng),"19,7-26,5"
+55,Khoa Công nghệ thông tin và Truyền thông (Đại học Đà Nẵng),18
+56,Đại học Công nghệ Thông tin và Truyền thông Việt - Hàn (Đại học Đà Nẵng),"18,05-18,25"
+57,Đại học Sư phạm Hà Nội,16-28
+58,Đại học Sư phạm Hà Nội 2,20-31
+59,Đại học Tài chính - Marketing,"18-26,1"
+60,Học viện Hàng không Việt Nam,"18,8-26,2"
+61,Đại học Công nghệ TP HCM,18-22
+62,Đại học Kinh tế - Tài chính TP HCM,19-24
+63,Đại học Y Dược Thái Bình,"16-27,15"
+64,Đại học Y Dược Hải Phòng,"21,4-27"
+65,Đại học Dược Hà Nội,"26,6-26,9"
+66,Đại học Hàng hải Việt Nam,"14-25,25"
+67,Học viện Kỹ thuật quân sự,"25-28,15"
+68,Học viện Hậu cần,"25,1-28,15"
+69,Học viện Quân y,"25,5-28,65"
+70,Học viện Khoa học quân sự,"24,6-28,1"
+71,Học viện Biên phòng,"20,4-28,5"
+72,Học viện Phòng không - Không quân,"22,9-25,85"
+73,Học viện Hải quân,"24,85-25,2"
+74,Trường Sĩ quan Lục quân 1,"25,3"
+75,Trường Sĩ quan Lục quân 2,"24,05-25,55"
+76,Trường Sĩ quan Chính trị,"23,25-28,5"
+77,Trường Sĩ quan Pháo binh,"22,1-24,4"
+78,Trường Sĩ quan Công binh,"23,65-24,1"
+79,Trường Sĩ quan Thông tin,"23,95-24,2"
+80,Trường Sĩ quan Tăng - Thiết giáp,"22,5-24,05"
+81,Trường Sĩ quan Đặc công,"23,6-24,15"
+82,Trường Sĩ quan Phòng hóa,"22,7-23,65"
+83,Trường Sĩ quan Không quân,17
+84,Đại học Đà Lạt,15-24
+85,Đại học Yersin Đà Lạt,14-21
+86,Học viện Nông nghiệp Việt Nam,"15-18,5"
+87,Đại học Công nghiệp Hà Nội,18-26
+88,Đại học Y Dược Cần Thơ,"19-26,95"
+89,Đại học Khoa học Tự nhiên (Đại học Quốc gia TP HCM),"16-27,2"
+90,Đại học Khoa học Xã hội và Nhân văn (Đại học Quốc gia TP HCM),"20-27,5"
+91,Đại học Kinh tế - Luật (Đại học Quốc gia TP HCM),"22,2-27,45"
+92,Khoa Y (Đại học Quốc gia TP HCM),"26-27,05"
+93,Đại học Quốc tế (Đại học Quốc gia TP HCM),18-27
+94,Đại học An Giang,15-20
+95,Đại học Văn hóa Hà Nội,"15-31,75 (có môn hệ số 2)"
+96,Học viện Phụ nữ Việt Nam,14-17
+97,Đại học Luật Hà Nội,15-29
+98,Học viện Tòa án,"21,1-27,25"
+99,Đại học Kiểm sát Hà Nội,"16,2-29,67"
+100,Học viện Cảnh sát nhân dân,"18,88-27,73"
+101,Đại học Phòng cháy chữa cháy,"26,95-28,39"
+102,Đại học Kỹ thuật - Hậu cần Công an nhân nhân,"22,35 đến 26,1"
+103,Học viện An ninh nhân dân,"20,66-28,18"
+104,Học viện Chính trị Công an nhân dân,"20,81-27,3"
+105,Đại học An ninh nhân dân,"19,54-26,06"
+106,Đại học Cảnh sát nhân dân,"21,55-26,45"
+107,Đại học Hà Nội,"24,38-34,48 (thang 40)"
+,,"23,45-25,4 (thang 30)"
+108,Học viện Công nghệ Bưu chính Viễn thông,"20-26,65"
+109,Học viện Kỹ thuật mật mã,"24,25-25,8"
+110,Đại học Mở TP HCM,"16-25,35"
+111,Đại học Công nghiệp Thực phẩm TP HCM,"15-22,5"
+112,Đại học Y Dược TP HCM,"19-28,45"
+113,Đại học Thủ đô,"18-30,2 (thang 40)"
+114,Đại học Kinh tế - Kỹ thuật Công nghiệp,"15-19,5"
+115,Đại học Lao động - Xã hội,14-21
+116,Đại học Sư phạm Kỹ thuật Hưng Yên,"15,5-18,5"
+117,Đại học Tài chính - Quản trị kinh doanh (Hưng Yên),14
+118,Đại học Đại Nam,15-22
+119,Đại học Kinh doanh và Công nghệ Hà Nội,"15-22,35"
+120,Đại học Thủy lợi,"15-22,75"
+121,Đại học Y tế công cộng,14-19
+122,Đại học Tôn Đức Thắng,"23-35,25 (thang 40)"
+123,Đại học Phenikaa,17-22
+124,Đại học Ngoại ngữ (Đại học Thái Nguyên),15-20
+125,Đại học Kỹ thuật Công nghiệp (Đại học Thái Nguyên),15-18
+126,Đại học Nông lâm (Đại học Thái Nguyên),15-21
+127,Đại học Sư phạm (Đại học Thái Nguyên),"17,5-25"
+128,Đại học Y Dược (Đại học Thái Nguyên),"20,9-26,4"
+129,Đại học Khoa học (Đại học Thái Nguyên),"15-18,5"
+130,Đại học Công nghệ thông tin và Truyền thông (Đại học Thái Nguyên),16-19
+131,Khoa Quốc tế (Đại học Thái Nguyên),"15,1-16,1"
+132,Đại học Kinh tế và Quản trị kinh doanh (Đại học Thái Nguyên),"14,5-19"
+133,Phân hiệu Đại học Thái Nguyên tại Lào Cai,15
+134,Đại học Kiến trúc Hà Nội,"15,65-28,5 (có môn hệ số 2)"
+135,Đại học Mỹ thuật Công nghiệp,"17,75-21,46"
+136,Đại học Luật (Đại học Huế),"15,25-17,5"
+137,Đại học Ngoại ngữ (Đại học Huế),"15-23,5"
+138,Đại học Kinh tế (Đại học Huế),15-20
+139,Đại học Nông lâm (Đại học Huế),15-19
+140,Đại học Nghệ thuật (Đại học Huế),"17-18,5"
+141,Đại học Sư phạm (Đại học Huế),15-20
+142,Đại học Khoa học (Đại học Huế),15-17
+143,Đại học Y Dược (Đại học Huế),"17,15-27,55"
+144,Khoa Giáo dục thể chất (Đại học Huế),"17,5"
+145,Khoa Du lịch (Đại học Huế),16-23
+146,Khoa Kỹ thuật và Công nghệ (Đại học Huế),"16,5-18,5"
+147,Khoa Quốc tế (Đại học Huế),17
+148,Phân hiệu Đại học Huế tại Quảng Trị,14-18
+149,Đại học Quốc tế Hồng Bàng (TP HCM),15-22
+150,Đại học Quốc tế Sài Gòn,17-18
+151,Đại học Hoa Sen (TP HCM),15-18
+152,Đại học Nguyễn Tất Thành (TP HCM),15-24
+153,Đai học Văn Hiến (TP HCM),"15-17,15"
+154,Đại học Công nghệ Sài Gòn,15-16
+155,Đại học Đồng Nai,15-19
+156,Đại học Công nghệ Đồng Nai,15-19
+157,Đại học Lạc Hồng,15-21
+158,Đại học Cần Thơ,"15-25,75"
+159,Đại học Trà Vinh,"15-25,2"
+160,Đại học Kiên Giang,"14-18,5"
+161,Đại học Xây dựng Miền Tây (Vĩnh Long),14-18
+162,Đại học Sư phạm Kỹ thuật Vĩnh Long,"15-18,5"
+163,Đại học Cửu Long (Vĩnh Long),15-21
+164,Đại học Bạc Liêu,15
+165,Đại học Nam Cần Thơ,17-23
+166,Học viện Thanh thiếu niên Việt Nam,15-17
+167,Đại học Nội vụ,14-23
+168,Đại học Công nghiệp dệt may Hà Nội,15-16
+169,Đại học Tây Nguyên,15-26
+170,Đại học Quy Nhơn,15-19
+171,Đại học Khánh Hoà,"15-18,5"
+172,Đại học Vinh,14-28 (có môn hệ số 2)
+173,Đại học Y khoa Vinh,"19-25,4"
+174,Đại học Sư phạm Kỹ thuật Vinh,"14,5-18,5"
+175,Đại học Hùng Vương (Phú Thọ),15-25 (có môn hệ số 2)
+176,Đại học Tân Trào (Tuyên Quang),"15-20,33"
+177,Đại học Sao Đỏ (Hải Dương),15-16
+178,Đại học Hồng Đức (Thanh Hóa),"15-29,25"
+179,Đại học Hoa Lư (Ninh Bình),"14-18,5"
+180,Đại học Hà Tĩnh,"14-18,5"
+181,Đại học Tây Bắc (Sơn La),"14,5-23,5"
+182,Đại học Nông lâm Bắc Giang,15
+183,Đại học Hạ Long (Quảng Ninh),15-17
+184,Đại học Kiến trúc TP HCM,"15,5-25,4"
+185,Đại học Văn hóa TP HCM,15-25
+186,Đại học Mỹ thuật TP HCM,"21,5-29,75 (môn năng khiếu hệ số 2)"
+187,Đại học Sân khấu Điện ảnh TP HCM,"25,5-28 (môn năng khiếu hệ số 2)"
+188,Đại học Thành Đô (Hà Nội),15-19
+189,Đại học Nguyễn Trãi (Hà Nội),"15-20,3"
+190,Đại học Phương Đông (Hà Nội),14-18
+191,Đại học Khoa học và Công nghệ Hà Nội,"20,3-25,6"
+192,Đại học Công nghệ Đông Á (Hà Nội),15-21
+193,Đại học Duy Tân (Đà Nẵng),14-22
+194,Đại học Kỹ thuật Y-Dược Đà Nẵng,"19-26,8"
+195,Đại học Phan Châu Trinh (Quảng Nam),15-22
+196,Đại học Quảng Nam,"13-18,5"
+197,Đại học Phú Yên,"18,5"
+198,Đại học Phan Thiết,14
+199,Đại học Văn Lang (TP HCM),16-21
+200,Đại học Ngoại ngữ - Tin học TP HCM,"25,5-29,25 (thang 40)"
+,,"16-23,25 (thang 30)"
+201,Đại học Gia Định (TP HCM),15
+202,Đại học Tài nguyên và Môi trường TP HCM,14-16
